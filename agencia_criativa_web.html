@@ -4,107 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agência Criativa Web</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@600;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu">
 </head>
 <body>
-    <header>
-        <p>Transformamos ideias em experiências digitais memoráveis.</p>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#depoimentos">Depoimentos</a></li>
-                <li><a href="#contato">Contato</a></li>
+    <header class="header">
+        <h1 class="header__title">Transformamos ideias em experiências digitais memoráveis.</h1>
+
+        <input type="checkbox" id="menu-toggle" class="header__checkbox">
+        <label for="menu-toggle" class="header__icon">
+            <span class="material-symbols-outlined">menu</span>
+        </label>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="#sobre">Sobre</a></li>
+                <li class="nav__item"><a class="nav__link" href="#servicos">Serviços</a></li>
+                <li class="nav__item"><a class="nav__link" href="#depoimentos">Depoimentos</a></li>
+                <li class="nav__item"><a class="nav__link" href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="home">
-            <h1>Bem-vindo à Agência Criativa Web</h1>
-            <p>Transformamos ideias em experiências digitais memoráveis. Design moderno, tecnologia de ponta e criatividade sem limites para impulsionar sua marca.</p>
-            <a href="#servicos">Conheça Nossos Serviços</a>
+        <section class="home" id="home">
+            <h1 class="home__title">Bem-vindo à Agência Criativa Web</h1>
+            <p class="home__paragraph">Transformamos ideias em experiências digitais memoráveis. Design moderno, tecnologia de ponta e criatividade sem limites para impulsionar sua marca.</p>
+            <a class="home__link" href="#servicos">Conheça Nossos Serviços</a>
         </section>
         
-        <section id="sobre">
-            <h2>Sobre Nós</h2>
-            <p>Na Agência Criativa Web, acreditamos que cada projeto é uma oportunidade de contar uma história. Não apenas criamos designs bonitos nós construímos conexões. Seja para lançar uma marca, renovar um site ou criar uma campanha impactante, nossa equipe une criatividade e técnica para gerar resultados reais.</p>
+        <section class="sobre" id="sobre">
+            <h2 class="sobre__title">Sobre Nós</h2>
+            <p class="sobre__paragraph">Na Agência Criativa Web, acreditamos que cada projeto é uma oportunidade de contar uma história. Não apenas criamos designs bonitos nós construímos conexões. Seja para lançar uma marca, renovar um site ou criar uma campanha impactante, nossa equipe une criatividade e técnica para gerar resultados reais.</p>
         </section>
        
-        <section id="servicos">
+        <section class="servicos" id="servicos">
 
-            <h2>Nossos Serviços</h2>
+            <h2 class="servicos__title">Nossos Serviços</h2>
             
-            <div>
-                <h3>Design Gráfico</h3>
-                <p>Criação de peças visuais impactantes para fortalecer a identidade da sua marca.</p>
-            </div>
-                
-            <div>
-                <h3>Desenvolvimento Web</h3>
-                <p>Sites responsivos e otimizados para garantir a melhor experiência ao usuário.</p>
-            </div>
+            <div class="servicos__list">
+                <div class="servicos__card">
+                    <h3 class="servicos__card-title">Design Gráfico</h3>
+                    <p class="servicos__card-text">Criação de peças visuais impactantes para fortalecer a identidade da sua marca.</p>
+                </div>
+                    
+                <div class="servicos__card">
+                    <h3 class="servicos__card-title">Desenvolvimento Web</h3>
+                    <p class="servicos__card-text">Sites responsivos e otimizados para garantir a melhor experiência ao usuário.</p>
+                </div>
 
-            <div>
-                <h3>Branding</h3>
-                <p>Estratégias e identidade visual únicas para destacar sua marca no mercado.</p>
-            </div>
+                <div class="servicos__card">
+                    <h3 class="servicos__card-title">Branding</h3>
+                    <p class="servicos__card-text">Estratégias e identidade visual únicas para destacar sua marca no mercado.</p>
+                </div>
 
-            <div>
-                <h3>Marketing Digital</h3>
-                <p>Campanhas e estratégias online para aumentar seu alcance e conversão.</p>
+                <div class="servicos__card">
+                    <h3 class="servicos__card-title">Marketing Digital</h3>
+                    <p class="servicos__card-text">Campanhas e estratégias online para aumentar seu alcance e conversão.</p>
+                </div>
             </div>
         </section>
         
-        <section id="depoimentos">
-            <h2>O que dizem nossos clientes</h2>
+        <section class="depoimentos" id="depoimentos">
+            <h2 class="depoimentos__title">O que dizem nossos clientes</h2>
             
-            <div>
-                <p>“A Agência Criativa Web transformou completamente a presença online da minha empresa. O novo site ficou incrível e já aumentamos as vendas em 40%!”</p>
-                <p>João Silva — Empreendedor</p>
+            <div class="depoimentos__item">
+                <p class="depoimentos__text">“A Agência Criativa Web transformou completamente a presença online da minha empresa. O novo site ficou incrível e já aumentamos as vendas em 40%!”</p>
+                <p class="depoimentos__author">João Silva — Empreendedor</p>
             </div>
 
-            <div>
-                <p>“Excelente trabalho! A equipe entendeu exatamente o que eu queria e criou uma identidade visual que representa perfeitamente minha marca.”</p>
-                <p>Maria Fernandes — Designer de Moda</p>
+            <div class="depoimentos__item">
+                <p class="depoimentos__text">“Excelente trabalho! A equipe entendeu exatamente o que eu queria e criou uma identidade visual que representa perfeitamente minha marca.”</p>
+                <p class="depoimentos__author">Maria Fernandes — Designer de Moda</p>
             </div>
 
-            <div>
-                <p>“Profissionais extremamente criativos e comprometidos. Meu portfólio online ficou muito mais atraente e funcional.”</p>
-                <p>Lucas Pereira — Fotógrafo</p>
+            <div class="depoimentos__item">
+                <p class="depoimentos__text">“Profissionais extremamente criativos e comprometidos. Meu portfólio online ficou muito mais atraente e funcional.”</p>
+                <p class="depoimentos__author">Lucas Pereira — Fotógrafo</p>
             </div>
         </section>
 
-        <section id="contato">
-            <h2>Fale Conosco:</h2>
+        <section class="contato" id="contato">
+            <h2 class="contato__title">Fale Conosco:</h2>
             
-            <div>
-                <p><strong>Endereço:</strong> Rua das Ideias, 123 - Fortaleza, CE</p>
-                <p><strong>Telefone:</strong> (85) 90000-9999</p>
-                <p><strong>E-mail:</strong> contato@agenciacriativaweb.com</p>                                  
+            <div class="contato__informacao">
+                <p class="contato__paragraph"><strong>Endereço:</strong> Rua das Ideias, 123 - Fortaleza, CE</p>
+                <p class="contato__paragraph"><strong>Telefone:</strong> (85) 90000-9999</p>
+                <p class="contato__paragraph"><strong>E-mail:</strong> contato@agenciacriativaweb.com</p>                                  
             </div>
 
-            <div>
-                <form>
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
+            <div class="contato__form">
+                <form class="form">
+                    <label class="form__label" for="nome">Nome:</label>
+                    <input class="form__input" type="text" id="nome" name="nome" required>
 
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
+                    <label class="form__label" for="email">E-mail:</label>
+                    <input class="form__input" type="email" id="email" name="email" required>
 
-                    <label for="msg">Mensagem</label>
-                    <textarea id="msg" name="message" cols="50" rows="5"></textarea>
+                    <label class="form__label" for="msg">Mensagem</label>
+                    <textarea class="form__textarea" id="msg" name="message" cols="50" rows="5"></textarea>
 
-                    <button type="submit">Enviar</button>
+                    <button class="form__button" type="submit">Enviar</button>
                 </form>
             </div>
         </section>
     </main>
-    <footer>
-        <p>Nossas Redes Sociais:</p>
-        <a href="">LinkedIn</a>
-        <a href="">Instagram</a>
+    <footer class="footer">
+        <p class="footer__text">Nossas Redes Sociais:</p>
+        <a class="footer__link" href="">LinkedIn</a>
+        <a class="footer__link" href="">Instagram</a>
     </footer>
 </body>
 </html>
