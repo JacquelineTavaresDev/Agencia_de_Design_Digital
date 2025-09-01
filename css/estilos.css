@@ -1,0 +1,209 @@
+body {
+  font-family: "Montserrat", sans-serif, "Inter", sans-serif;
+  line-height: 1.6;
+  background: rgb(249, 249, 249);
+  color: rgb(51, 51, 51);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #4169E1;
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+.header__title {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+.header__checkbox {
+  display: none;
+}
+.header__icon {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+
+.nav__list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+.nav__link {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+.nav__link:hover {
+  color: #FFD369;
+}
+
+@media (max-width: 768px) {
+  .header__icon {
+    display: block;
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #4169E1;
+    width: 150px;
+    padding: 1rem;
+    border-bottom-left-radius: 12px;
+  }
+  .nav__list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .header__checkbox:checked ~ .nav {
+    display: flex;
+  }
+}
+.home {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: url("marketing_digital.jpg");
+  color: rgb(255, 255, 255);
+}
+.home__title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.home__paragraph {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 1.5rem auto 2rem;
+}
+.home__link {
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #FFD369;
+  color: rgb(51, 51, 51);
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.home__link:hover {
+  background-color: rgb(255, 196.04, 54);
+}
+.home__link:hover {
+  background-color: rgb(131.0681818182, 157.1590909091, 235.4318181818);
+  color: rgb(255, 255, 255);
+}
+
+section {
+  padding: 1.5rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.sobre__title,
+.servicos__title,
+.depoimentos__title,
+.contato__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4169E1;
+  text-align: center;
+}
+
+.servicos {
+  text-align: center;
+  margin: 4rem auto;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+}
+.servicos__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.servicos__card {
+  background: rgb(255, 255, 255);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  flex: 1 1 45%;
+  max-width: 350px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.servicos__card:hover {
+  transform: translateY(-5px);
+}
+.servicos__card-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: rgb(51, 51, 51);
+}
+.servicos__card-text {
+  font-size: 1rem;
+  color: rgb(128, 128, 128);
+}
+
+.depoimentos__item {
+  background: rgb(255, 255, 255);
+  margin: 1rem 0;
+  padding: 1.5rem;
+  border-left: 5px solid #4169E1;
+  border-radius: 8px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.form__input, .form__textarea {
+  padding: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+}
+.form__button {
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #4169E1;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+.form__button:hover {
+  background-color: rgb(32.5909090909, 76.0454545455, 206.4090909091);
+}
+
+.footer {
+  padding: 2rem;
+  background: #4169E1;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.footer__link {
+  color: #FFD369;
+  margin: 0 0.5rem;
+  font-weight: 600;
+}
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=estilos.css.map */

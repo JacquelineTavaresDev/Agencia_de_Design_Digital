@@ -1,0 +1,22 @@
+
+// botão reutilizável //
+@mixin botao ($bg, $color) {
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: $bg;
+    color: $color;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+
+  &:hover {
+    background-color: darken($bg, 10%);
+  }
+}
+
+// sombra reutilizável //
+@mixin sombra($intensidade: 0.1) {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, $intensidade);
+}
+
